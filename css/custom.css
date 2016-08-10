@@ -11,20 +11,20 @@ body {
 
 .margin-left-20 { margin-left: 20px; }
 
-.main-title { 
-	font-size: 6vw; 
+.main-title {
+	font-size: 6vw;
 	margin-bottom: -18px;
 }
 
 .main-title-sub { font-size: 3vw; }
 
-.title-image { 
-	width: 20vw; 	
-	height: auto;	
+.title-image {
+	width: 20vw;
+	height: auto;
 	padding-right: 20px;
 }
 
-.title-image-space { 
+.title-image-space {
 	float: left;
 	height: 10vw;
 }
@@ -54,7 +54,7 @@ body {
 	color: white;
 	padding: 0px 10px 10px 10px;
 }
- 
+
 .checkmark {
 	border-radius: 50%;
 	border-style: solid;
@@ -66,7 +66,7 @@ body {
 }
 
 .week-section-item {
-	background-color: #e380b4;
+	background-color: #f142a8;
 	border-radius: 25px;
 	margin: 10px;
 	padding: 10px;
@@ -93,3 +93,8 @@ body {
 	height: auto;
 }
 
+.week-2-a img {
+	height: 180px;
+	width: 180px;
+	margin-left: 10px;
+}
