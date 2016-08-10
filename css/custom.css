@@ -1,15 +1,32 @@
 body {
 	margin : 0px 3vw 0px 3vw;
 	font-family: 'Bree Serif', sans-serif;
+	font-size: 23px;
 }
 
+a { color: white; }
+
 .pink { color: #e90e8d; }
+
+.btn-blue { 
+	background-color: #42c4df;
+	border-color: #42c4df; 
+	font-size: 16px;
+}
+
+.btn-blue:hover, .btn-blue:active, .btn-blue:focus {
+	background-color: #42c4df;
+	border-color: #42c4df;
+}
 
 .center { text-align:center; }
 
 .pad-20 { padding: 20px; }
 
+.margin-left-10 {margin-left: 10px;}
 .margin-left-20 { margin-left: 20px; }
+.margin-right-10 { margin-right: 10px; }
+.margin-right-20 { margin-right: 20px; }
 
 .main-title {
 	font-size: 6vw;
@@ -44,6 +61,12 @@ body {
 	padding: 10px 10px 0px 10px
 }
 
+.collapse-button {
+	float: right;
+	margin: 33.5px 10px 0px 0px;
+	background-color: #42c4df;
+}
+
 .week-section-sub1 {
 	font-size: 22px;
 	padding: 0px 10px 0px 10px;
@@ -52,7 +75,7 @@ body {
 .week-section-sub2 {
 	font-size: 18px;
 	color: white;
-	padding: 0px 10px 10px 10px;
+	padding: 0px 10px 0px 10px;
 }
 
 .checkmark {
@@ -71,7 +94,6 @@ body {
 	margin: 10px;
 	padding: 10px;
 	color: white;
-	font-size: 23px;
 	height: auto;
 	overflow: auto;
 }
@@ -97,4 +119,14 @@ body {
 	height: 180px;
 	width: 180px;
 	margin-left: 10px;
+	float: right;
+}
+
+.week-2-c img { float: right; }
+
+.week-3-b img {
+	float: right;
+	width: 100px;
+	height: auto;
+	padding: 10px;
 }
