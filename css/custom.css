@@ -6,6 +6,8 @@ body {
 
 a { color: white; }
 
+a:hover { color: white; }
+
 .pink { color: #e90e8d; }
 
 .btn-blue { 
