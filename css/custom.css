@@ -90,6 +90,14 @@ a:hover { color: white; }
 	margin: 10px;
 }
 
+.not-clicked {
+	background:url('../images/original-checkbox_empty.png') no-repeat center;
+}
+
+.is-clicked {
+	background:url('../images/original-checkbox_filled.png') no-repeat center;
+}
+
 .week-section-item {
 	background-color: #f142a8;
 	border-radius: 25px;
