@@ -16,7 +16,7 @@
 	<h1 class = "main-title-sub">Making the Jump from Applicant to Franchise Owner</h1>
 
 	<!-- WEEK 1  -->
-	<div class = "week-section">
+	<div class = "week-section" id="week-1" onclick="toggle('week-1')">
 		<button class = "btn btn-xl collapse-button" data-toggle="collapse" data-target="#inner1">+</button>
 		<h1 class = "week-section-title">Step 1 - Week 1</h1>
 		<h1 class = "week-section-sub1">Apply! You did that already YAY YOU!</h1>
@@ -62,7 +62,7 @@
 
 
 	<!-- WEEK 2  -->
-	<div class = "week-section">
+	<div class = "week-section" id="week-2" onclick="toggle('week-2')">
 
 		<button class = "btn btn-xl collapse-button" data-toggle="collapse" data-target="#inner2">+</button>
 		<h1 class = "week-section-title">Step 2 - Week 2</h1>
@@ -113,7 +113,7 @@
 	</div>
 
 	<!-- WEEK 3  -->
-	<div class = "week-section">
+	<div class = "week-section" id="week-3" onclick="toggle('week-3')">
 		<button class = "btn btn-xl collapse-button" data-toggle="collapse" data-target="#inner3">+</button>
 		<h1 class = "week-section-title">Step 3 - Week 3</h1>
 		<h1 class = "week-section-sub1">It's time for Hot Mama culture and legalese!</h1>
@@ -158,7 +158,7 @@
 	</div> <!-- End week-section -->
 
 	<!-- WEEK 4/5 -->
-	<div class = "week-section">
+	<div class = "week-section" id="week-4" onclick="toggle('week-4')">
 		<button class = "btn btn-xl collapse-button" data-toggle="collapse" data-target="#inner45">+</button>
 		<h1 class = "week-section-title">Step 1 - Week 1</h1>
 		<h1 class = "week-section-sub1">Apply! You did that already YAY YOU!</h1>
@@ -203,7 +203,7 @@
 	</div> <!-- End week-section -->
 
 	<!-- WEEK 6  -->
-	<div class = "week-section">
+	<div class = "week-section" id="week-5" onclick="toggle('week-5')">
 		<button class = "btn btn-xl collapse-button" data-toggle="collapse" data-target="#inner6">+</button>
 		<h1 class = "week-section-title">Step 1 - Week 1</h1>
 		<h1 class = "week-section-sub1">Apply! You did that already YAY YOU!</h1>
@@ -250,5 +250,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+	<script>
+	function toggle(id){
+		if(event.target.id.localeCompare(id)==0 || event.target.tagName.localeCompare('H1') == 0){
+			var x = '#inner'+id.split('-')[1]+'.collapse';
+			$(x).collapse('toggle');
+		}
+	};
+	</script>
 </body>
 </html>
