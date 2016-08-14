@@ -1,5 +1,7 @@
-function toggle(id){
-	if(event.target.id.localeCompare(id)==0 || event.target.tagName.localeCompare('H1') == 0){
+function tgl(id,e){
+	if(!e) e = window.event;
+	target = e.target||e.srcElement;
+	if(target.id.localeCompare(id)==0 || target.tagName.localeCompare('H1') == 0){
 		var x = '#inner'+id.split('-')[1]+'.collapse';
 		$(x).collapse('toggle');
 	}
@@ -12,7 +14,9 @@ $(document).ready(function(){
 		x[i].classList.add("check-"+i);
 		//alert(x[i].classList);
 		x[i].addEventListener("click", function (e) {
-			var lst = event.target.classList;
+			if( !e ) e = window.event;
+			target = e.target||e.srcElement;
+			var lst = target.classList;
 			var num=-1;
 			for(var j=0;j<lst.length;j++){
 				//alert(lst[j]);
@@ -40,7 +44,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	var x = document.getElementsByClassName("checkmark");
-	var gist = event.target.classList;
 	var count = getCookie();
 	for(var i=0;i<=count;i++){
 		var y = document.getElementsByClassName("check-"+i)[0];
