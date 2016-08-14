@@ -1,3 +1,19 @@
+$(document).ready(function(){
+	var sections = document.getElementsByClassName('week-section');
+	var position = getCookie();
+	var group = 1;
+	$('div[id^="week-"]').each(function(){
+		if(position==-1){//at the next box
+			group = this.id.split('-')[1]//get the week number
+		}
+		if(/^week-..*-..*$/.test(this.id)){//iterate through all subsections only
+			position-=1;
+		}
+	});
+	var inner = '#inner'+group+'.collapse';
+	$(inner).collapse('toggle');
+});
+
 function tgl(id,e){
 	if(!e) e = window.event;
 	target = e.target||e.srcElement;

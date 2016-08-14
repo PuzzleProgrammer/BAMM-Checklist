@@ -117,7 +117,7 @@ a:hover { color: white; }
 }
 
 
-.week-1-a img {
+#week-1-a img {
 	height: 180px;
 	width: 180px;
 	background-color: black;
@@ -127,22 +127,22 @@ a:hover { color: white; }
 	margin-left: 10px;
 }
 
-.week-1-e img {
+#week-1-e img {
 	float: right;
 	width: 40px;
 	height: auto;
 }
 
-.week-2-a img {
+#week-2-a img {
 	height: 180px;
 	width: 180px;
 	margin-left: 10px;
 	float: right;
 }
 
-.week-2-c img { float: right; }
+#week-2-c img { float: right; }
 
-.week-3-b img {
+#week-3-b img {
 	float: right;
 	width: 100px;
 	height: auto;
