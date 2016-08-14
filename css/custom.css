@@ -57,6 +57,14 @@ a:hover { color: white; }
 	display: block;
 }
 
+.week-section:hover,.week-section-sub2:hover {
+	cursor:pointer;
+}
+
+.week-section .collapse {
+	cursor:initial;
+}
+
 .week-section-title {
 	font-size:25px;
 	color: #42c4df;
